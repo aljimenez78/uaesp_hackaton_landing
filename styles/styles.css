@@ -12,8 +12,7 @@ body {
 
 .banner {
     display: flex;
-    flex-direction: column;
-    width: 70%;
+    flex-direction: column;    
     height: 4rem;
     margin-left: 10rem;
     align-items: center;
