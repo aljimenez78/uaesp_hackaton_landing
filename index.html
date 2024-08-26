@@ -4,72 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Revisar nombre con equipo de mercadeo -->
-    <title>Vitae UAESP</title>
+    <title>DataMind UAESP</title>
     <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="icon" href="">
+    <link rel="icon" href="/images/logoEmpresarial.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="banner">
         <a href="https://www.uaesp.gov.co/" target="_blank"><img id="logo" src="/images/LOGO_PRINCIPAL_WEB.png" alt="logo Alcaldía y UAESP"></a> 
     </header>
-    <nav>Barra de navegación
-        <a href="">Proyectos</a>
-        <a href="">Indicadores</a>
-        <a href="">Contacto</a>
+    <nav>
+        <a class="linkNav" href="">Proyectos</a>
+        <a class="linkNav" href="">Indicadores</a>
+        <a class="linkNav" href="">Contacto</a>
     </nav>
-    <aside>Barra de areas
-        <a href="">Área 1</a>
-        <a href="">Área 2</a>
-        <a href="">Área 3</a>
-        <a href="">Área 4</a>
-        <a href="">Área 5</a>
+    <aside id="asideColumna" class="menuVisible">
+        <div class="asideHead">
+            <h4 class="tituloAside">Barra de áreas</h4> <i id="menuBoton" class='bx bx-menu'></i>
+        </div>
+        <a class="linkAside" href="#area1"><i class='bx bx-store-alt'></i><span class="textoLink">PAA</span></a>
+        <a class="linkAside" href="#area2"><i class='bx bx-leaf'></i><span class="textoLink">PINAR</span></a>
+        <a class="linkAside" href="#area3"><i class='bx bxs-institution'></i><span class="textoLink">PAVPR</span></a>
+        <a class="linkAside" href="#area4"><i class='bx bx-user-voice'></i><span class="textoLink">PETH</span></a>
+        <a class="linkAside" href="#area5"><i class='bx bxs-school'></i><span class="textoLink">PIC</span></a>
     </aside>
-    <main>Espacio para los programas y planes
-        <section id="area1" class="oculta">
-            <h3>Área 1</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis similique odio impedit et facilis, earum, necessitatibus optio obcaecati numquam nesciunt tempore nulla quisquam qui velit amet enim nam atque assumenda.</p>
+    <main>
+        <h4 class="tituloMain">Proyecto de Acción Institucional PAI</h4>
+        <section id="area1" class="visible">
+            <h3>Plan Anual de adquisiciones PAA</h3>
+            <p><b>Descripción área:</b>
+                <ul>
+                    <li class="liContenido">Cambiar nuestros hábitos de vida para reverdecer a Bogotá y adaptarnos y mitigar la crisis climática.</li>
+                    <li class="liContenido">Hacer un nuevo contrato social con igualdad de oportunidades para la inclusión social, productiva y política</li>
+                    <li class="liContenido">Cambiar nuestros hábitos de vida para reverdecer a Bogotá y adaptarnos y mitigar la crisis climática.</li>
+                    <li class="liContenido">Inspirar confianza y legitimidad para vivir sin miedo y ser epicentro de cultura ciudadana, paz y reconciliación.</li>
+                </ul>
+            </p>
             <ul>
-                <li><a href="" class="enlacePlan">Plan 1</a></li>
-                <li><a href="" class="enlacePlan">Plan 2</a></li>
+                <li class="liPlanes"><a href="" class="enlacePlan">Plan 1</a></li>
+                <li class="liPlanes"><a href="" class="enlacePlan">Plan 2</a></li>
             </ul>
         </section>
-        <section id="area2" class="oculta">
-            <h3>Área 2</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita aperiam, quasi dolorum qui, quis tempore velit amet voluptatum dignissimos fugiat cumque blanditiis quisquam ipsum nemo harum eaque exercitationem deserunt quaerat!</p>
+        <section id="area2" class="visible">
+            <h3>Plan Institucional de Archivos de la Entidad - PINAR</h3>
+            <p><b>Descripción área:</b> Construir Bogotá - Región con gobierno abierto, transparente y ciudadanía consciente.</p>
             <ul>
-                <li><a href="" class="enlacePlan">Plan 1</a></li>
-                <li><a href="" class="enlacePlan">Plan 2</a></li>
+                <li class="liPlanes"><a href="" class="enlacePlan">Plan 1</a></li>
+                <li class="liPlanes"><a href="" class="enlacePlan">Plan 2</a></li>
             </ul>
         </section>
-        <section id="area3" class="oculta">
-            <h3>Área 3</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis voluptate, odio voluptatem corrupti reiciendis quia voluptatibus? Debitis voluptate nesciunt est commodi ut officia impedit perferendis, exercitationem sequi hic cumque reprehenderit!</p>
+        <section id="area3" class="visible">
+            <h3>Plan Anual de provisión de vacantes y previsión de recursos - PAVPR</h3>
+            <p><b>Descripción área:</b>Construir Bogotá - Región con gobierno abierto, transparente y ciudadanía consciente.</p>
             <ul>
-                <li><a href="" class="enlacePlan">Plan 1</a></li>
-                <li><a href="" class="enlacePlan">Plan 2</a></li>
+                <li class="liPlanes"><a href="" class="enlacePlan">Plan 1</a></li>
+                <li class="liPlanes"><a href="" class="enlacePlan">Plan 2</a></li>
             </ul>
         </section>
-        <section id="area4" class="oculta">
-            <h3>Área 4</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi inventore repellendus repudiandae dolor omnis? Enim, repudiandae dignissimos? Velit aut odio officiis incidunt est, ex harum accusantium quaerat aliquid illo id?</p>
+        <section id="area4" class="visible">
+            <h3>Plan Estratégico de Talento Humano - PETH </h3>
+            <p><b>Descripción área:</b>Construir Bogotá - Región con gobierno abierto, transparente y ciudadanía consciente.</p>
             <ul>
-                <li><a href="" class="enlacePlan">Plan 1</a></li>
-                <li><a href="" class="enlacePlan">Plan 2</a></li>
+                <li class="liPlanes"><a href="" class="enlacePlan">Plan 1</a></li>
+                <li class="liPlanes"><a href="" class="enlacePlan">Plan 2</a></li>
             </ul>
         </section>
-        <section id="area5" class="oculta">
-            <h3>Área 5</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error aliquid consectetur dolorem harum cumque voluptate doloribus illo explicabo, quasi a excepturi reiciendis! Nam quam tenetur ducimus sint, dolorem saepe?</p>
+        <section id="area5" class="visible">
+            <h3>Plan Institucional de Capacitación - PIC</h3>
+            <p><b>Descripción área:</b>Construir Bogotá - Región con gobierno abierto, transparente y ciudadanía consciente.</p>
             <ul>
-                <li><a href="" class="enlacePlan">Plan 1</a></li>
-                <li><a href="" class="enlacePlan">Plan 2</a></li>
+                <li class="liPlanes"><a href="" class="enlacePlan">Plan 1</a></li>
+                <li class="liPlanes"><a href="" class="enlacePlan">Plan 2</a></li>
             </ul>
         </section>
     </main>
     <footer>
         <article>
             <p>
-                <a href="https://maps.app.goo.gl/YZcWmc96KEfwAqVeA" target="_blank">Dirección: Av Caracas 53-80 Bogotá - Cundinamarca.</a>
+                <a class="footerLink" href="https://maps.app.goo.gl/YZcWmc96KEfwAqVeA" target="_blank">Dirección: Av Caracas 53-80 Bogotá - Cundinamarca.</a>
             </p>
             <p>
                 Código Postal: 110231
@@ -82,10 +94,10 @@
                 Nit: 900.126.860-4
             </p>
             <p>
-                Correo Electrónico de Contacto y Recepción de Correspondencia: <a href="">uaesp@uaesp.gov.co</a> <br>
+                Correo Electrónico de Contacto y Recepción de Correspondencia: <a class="footerLink" href="mailto:uaesp@uaesp.gov.co">uaesp@uaesp.gov.co</a> <br>
             </p>
             <p>
-                Correo Electrónico Exclusivo para Notificaciones Judiciales : <a href="">notificacionesjudiciales@uaesp.gov.co</a>
+                Correo Electrónico Exclusivo para Notificaciones Judiciales : <a class="footerLink" href="mailto:notificacionesjudiciales@uaesp.gov.co">notificacionesjudiciales@uaesp.gov.co</a>
             </p>
         </article>
     </footer>

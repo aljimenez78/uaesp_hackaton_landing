@@ -8,45 +8,184 @@
 body {
     display: flex;
     flex-direction: column;
+    background-color: rgb(227, 223, 223);
 }
+
+h3 {
+    color: #226a4e;
+}
+
 
 .banner {
     display: flex;
     flex-direction: column;    
     height: 4rem;
-    margin-left: 10rem;
+    margin-left: 3rem;
     align-items: center;
-    border: solid greenyellow;
+    background-color: white;
+    border-radius: 10px 0 0 0;
+    /* border: solid greenyellow; */
 }
 
 #logo {
     height: 3rem;
 }
 
+/* Barra de navegación: Estilos de barra de navegación */
 nav {
-    border: solid tomato;
-    margin-left: 10rem;
+    display: flex;
+    flex-direction: row;
+    /* border: solid tomato; */
+    margin-left: 3rem;
+    background-color: #1cd895;
+    justify-content: space-around;
+    border-radius: 0 0 0 10px;
+}
+
+.linkNav {
+    text-decoration: none;
+    color: #226a4e;
+    text-align: center;
+    width: 30%;
+    height: 1.5em;
+    padding: .5rem;
+}
+
+.linkNav:hover {
+    padding-top: .5rem;
+    height: 1.5em;
+    background-color: #226a4e;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    justify-self: center;
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
 }
 
 aside {
-    border: solid fuchsia;
+    /* border: solid fuchsia; */
     display: flex;
     flex-direction: column;
     position: fixed;
     border-radius: 0 10px 10px 0;
     width: 10rem;
-    background-color: #ffffffc5;
-    backdrop-filter: blur(1px);
+    background-color: #226a4ed6;
+    backdrop-filter: blur(1.5px);
     height: 100%;
+    color: #f0cf70;
+    transition: all .4s ease;
+    z-index: 20;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
+/* Estilos del menú lateral */
+.menuVisible {
+    width: 3rem;
+}
+
+.menuVisible .tituloAside {
+    display: none;
+    margin: auto;
+}
+
+.menuVisible .textoLink {
+    display: none;
+}
+
+.asideHead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+/*     background-color: #226a4e;
+    border-radius: 10px;
+    margin: .2rem; */
+}
+
+.bx-menu {
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: .8rem;
+}
+
+.linkAside {
+    display: flex;
+    flex-direction: row;
+    color: #f0cf70;
+    text-decoration: none;
+    height: 1rem;
+    padding: .5rem;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.linkAside:hover {
+    background-color: #1cd895;
+    border-radius: 10px;
+    color: #226a4e;
+    height: 1rem;
+    margin: 0 .5rem 0 .5rem;
+    padding: .5rem;
+    text-align: center;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.82)
+}
+
+
+.tituloAside {
+    text-align: center;
+    margin: .8rem;
+    color: #f0cf70;
+    font-weight: bolder;
+}
+
+/* Estilos de área de planes */
 
 main {
-    border: solid blue;
-    margin-left: 10rem;
+    /* border: solid blue; */
+    margin-left: 3rem;
 }
 
+.tituloMain {
+    margin: .8rem;
+    text-align: center;
+}
+
+.visible {
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+.liPlanes {
+    margin: 1.5rem 1rem;
+}
+
+.liContenido {
+    margin-left: 1.5rem;
+}
+
+.enlacePlan {
+    text-decoration: none;
+    color: #75bcfa;
+}
+
+/*Estilos del footer*/
+
 footer {
-    border: solid green;
-    margin-left: 10rem;
+    /* border: solid green; */
+    margin-left: 3rem;
     font-size: smaller;
+    background-color: #75bcfa;
+    padding: 1rem;
+    border-radius: 20px 0 0 20px;
+}
+
+.footerLink {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
 }
