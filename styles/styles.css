@@ -37,7 +37,7 @@ nav {
     flex-direction: row;
     /* border: solid tomato; */
     margin-left: 3rem;
-    background-color: #1cd895;
+    background-color: #77dd77;
     justify-content: space-around;
     border-radius: 0 0 0 10px;
 }
@@ -45,6 +45,7 @@ nav {
 .linkNav {
     text-decoration: none;
     color: #226a4e;
+    font-weight: bold;
     text-align: center;
     width: 30%;
     height: 1.5em;
@@ -73,7 +74,7 @@ aside {
     background-color: #226a4ed6;
     backdrop-filter: blur(1.5px);
     height: 100%;
-    color: #f0cf70;
+    color: #ffa424;
     transition: all .4s ease;
     z-index: 20;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -113,7 +114,8 @@ aside {
 .linkAside {
     display: flex;
     flex-direction: row;
-    color: #f0cf70;
+    color: #ff9800;
+    font-weight: 100;
     text-decoration: none;
     height: 1rem;
     padding: .5rem;
@@ -122,7 +124,7 @@ aside {
 }
 
 .linkAside:hover {
-    background-color: #1cd895;
+    background-color: #77dd77;
     border-radius: 10px;
     color: #226a4e;
     height: 1rem;
@@ -136,7 +138,7 @@ aside {
 .tituloAside {
     text-align: center;
     margin: .8rem;
-    color: #f0cf70;
+    color: #ffa424;
     font-weight: bolder;
 }
 
@@ -188,4 +190,42 @@ footer {
     text-decoration: none;
     color: black;
     font-weight: bolder;
+}
+
+.chatBox {
+    height: 20rem;
+    width: 15rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 39%;
+    left: 80%;
+    display: none;
+}
+
+.avatar {
+    background-color: grey;
+    border-radius: 50%;
+    width: 5.2rem;
+    height: 5.2rem;
+    display: flex;
+    position: fixed;
+    top: 80%;
+    left: 91%;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+}
+
+.avatar:hover {
+    background-color: #77dd77;
+    transition: .5s;
+}
+
+.avatar img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
 }
